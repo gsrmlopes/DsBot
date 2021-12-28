@@ -24,11 +24,13 @@ Client.once("ready", () =>{
 Client.on('message', message =>{
     if(!message.content.startsWith(Config.prefix) || message.author.bot) return;
     const Args = message.content.slice(Config.prefix.length).split(/ +/);
-    const Command = Args.shift().toLowerCase()
+    const Command = Args.shift().toLowerCase();
     if(Command === 'help'){
         Client.commands.get('help').execute(message,Args);
     } else if(Command === 'r'){
         Client.commands.get('r').execute(message,Args);
+    }else if(Command === 'rm'){
+        Client.commands.get('rm').execute(message,Args);
     } else if (Command === 'cls'){
         Client.commands.get('cls').execute(message,Args);
     }
