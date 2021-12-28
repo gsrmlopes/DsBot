@@ -1,4 +1,5 @@
 #ignora a pasta de módulos
 node_modules/
 #ignora as informações sensitivas do projeto
+config.*
 config.json
