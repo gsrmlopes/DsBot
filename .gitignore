@@ -2,3 +2,5 @@
 node_modules/
 #ignora as informações sensitivas do projeto
 config.json
+
+backup_teste.txt
